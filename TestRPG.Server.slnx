@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/server/" />
+  <Folder Name="/server/src/">
+    <Project Path="server/src/TestRPG.Server.Api/TestRPG.Server.Api.csproj" />
+  </Folder>
+</Solution>
