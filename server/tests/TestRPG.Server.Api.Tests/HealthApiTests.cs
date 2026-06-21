@@ -14,6 +14,11 @@ public sealed class HealthApiTests : IClassFixture<WebApplicationFactory<Program
         httpClient = factory.CreateClient();
     }
 
+    /// <summary>
+    /// 内容 : api/health エンドポイントにGETリクエストを送信し、HTTPステータスコード200 OKが返されることを確認
+    /// 期待挙動 : HTTPステータスコード200 OKが返され、レスポンスボディのStatusが"ok"であることを確認
+    /// </summary>
+    /// <returns></returns>
     [Fact]
     public async Task GetHealth_ReturnsOKResponse()
     {
