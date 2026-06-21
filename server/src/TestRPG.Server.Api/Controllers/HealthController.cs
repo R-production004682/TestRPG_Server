@@ -10,7 +10,7 @@ public sealed class HealthController : ControllerBase
     [ProducesResponseType<HealthResponse>(StatusCodes.Status200OK)]
     public ActionResult<HealthResponse> Get()
     {
-        return Ok(new HealthResponse("OK"));
+        return Ok(new HealthResponse("ok"));
     }
 }
 
