@@ -1,8 +1,12 @@
+using MySqlConnector;
+using TestRPG.Server.Api.MasterData;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddScoped<IGetEnemiesQueryHandler, GetEnemiesQueryHandler>();
 
 var app = builder.Build();
 
